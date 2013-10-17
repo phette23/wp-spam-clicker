@@ -2,8 +2,12 @@
 (function ( undefined ){
   var d = document,
     unsupported = !( d.querySelectorAll && d.querySelector && Array.prototype.forEach && Element.prototype.querySelector && Element.prototype.setAttribute ),
-    names = sites = emails = ips = [],
-    totalComments = actedUpon = 0;
+    names = [],
+    sites = [],
+    emails = [],
+    ips = [],
+    totalComments = 0,
+    actedUpon = 0;
 
   // shortcuts
   function qa ( sel ) {
