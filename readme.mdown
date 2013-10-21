@@ -1,0 +1,33 @@
+# Wordpress Spam Clicker Bookmarklet
+
+A bookmarklet that checks off possible spam comments in the admin side of Wordpress (wp-admin/edit-comments.php). It does not perform any action but can save you a lot of clicking.
+
+## Details
+
+The bookmarklet checks each comment against a blacklist array of regular expressions of common names, websites, emails, and IP addresses used by spammers.
+
+How did I compile the blacklist? By looking at a bunch of spam comments. It's not comprehensive and I'd review the selections the bookmarklet makes to ensure you're not throwing away legit comments. Right now, there are actually no blacklisted emails or IP addresses. Checking names for stuff like clothing and drug brands was by far the most fruitful approach.
+
+It'll only work in modern browsers because it uses stuff like `forEach` & I didn't bother relying on jQuery.
+
+## Dev
+
+If you want to benefit from the available Grunt tasks, ensure you have node on your system, install Grunt globally (`npm install grunt-cli -g`), & then run `npm install` inside the project's directory.
+
+`grunt build` produces a minified version of the bookmarklet ("bookmarklet.min.js").
+
+`grunt` runs JSHint & then minifies the bookmarklet. It produces a bunch of harmless warnings (mostly "X defined but never used" for function parameters) right now.
+
+`grunt watch` watches for changes of main.js & re-builds the minified file.
+
+## Built With
+
+- Yeoman (generator-bookmarklet)
+- Grunt
+- JSHint
+- UglifyJS
+- Sublime Text 3
+
+## License
+
+[CC0](https://creativecommons.org/publicdomain/zero/1.0/) No Rights Reserved
