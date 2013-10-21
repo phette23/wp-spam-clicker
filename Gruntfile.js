@@ -41,7 +41,5 @@ module.exports = function (grunt) {
 
   grunt.registerTask( 'build', [ 'uglify' ] );
 
-  grunt.registerTask( 'server', [ 'watch' ] );
-
   grunt.registerTask( 'default', [ 'jshint', 'build' ] );
 };
