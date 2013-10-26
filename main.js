@@ -1,4 +1,5 @@
 /*jshint strict:false, browser:true */
+void(
 (function ( undefined ){
   var d = document,
     unsupported = !( d.querySelectorAll && d.querySelector && Array.prototype.forEach && Element.prototype.querySelector && Element.prototype.setAttribute ),
@@ -77,7 +78,8 @@
     , /removedrmfast\.com/
     , /mariopireddu\.net/
     , /hopegfx\.com/
-    , /proxykat\.net/ ];
+    , /proxykat\.net/
+    , /billsmithinc\.com/ ];
   // emails = [ ];
   // ips = [ ];
 
@@ -131,4 +133,5 @@
   });
 
   console.log( '%d comments selected out of %d', actedUpon, totalComments );
-}());
+}())
+);
