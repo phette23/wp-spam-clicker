@@ -60,6 +60,14 @@ void(
     , /meridia/i
     , /lorazepam/i
     , /My Homepage/
+    , /Homepage/
+    , /Wellensteyn/
+    , /Hermes/
+    , /vuitton/
+    , /insurance/
+    , /moncler/
+    , /suresh/
+    , /coupon/
     , /^(URL)$/ ];
   sites = [ /idealglasses\.net/
     , /gruppomelearn\.net/
