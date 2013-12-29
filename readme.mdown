@@ -16,11 +16,13 @@ It'll only work in modern browsers because it uses stuff like `forEach` & I didn
 
 If you want to benefit from the available Grunt tasks, ensure you have node on your system, install Grunt globally (`npm install grunt-cli -g`), & then run `npm install` inside the project's directory.
 
-`grunt build` produces a minified version of the bookmarklet ("bookmarklet.min.js").
+`grunt build` minifies the bookmarklet to bookmarklet.min.js.
 
-`grunt` runs JSHint & then minifies the bookmarklet. It produces a bunch of harmless warnings (mostly "X defined but never used" for function parameters) right now.
+`grunt` runs JSHint & then minifies the bookmarklet.
 
 `grunt watch` watches for changes of main.js & re-builds the minified file.
+
+`toclip.sh` is handy during development; it's a shell script to put the bookmarklet on your system clipboard, for easy pasting into your bookmarks.
 
 ## Built With
 

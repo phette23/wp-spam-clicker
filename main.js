@@ -1,6 +1,8 @@
-/*jshint strict:false, browser:true */
+/*jshint browser:true, unused:false */
+/* global NodeList */
 void(
 (function ( undefined ){
+  'use strict';
   var d = document,
     unsupported = !( d.querySelectorAll && d.querySelector && Array.prototype.forEach && Element.prototype.querySelector && Element.prototype.setAttribute ),
     names = [],
