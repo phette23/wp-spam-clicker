@@ -24,7 +24,7 @@ void(
   }
 
   // arrays of regexs which comments are tested against
-  names = [ /real estate/
+  names = [ /real estate/i
     , /oakley/i
     , /sunglasses/i
     , /massage/i
@@ -59,15 +59,15 @@ void(
     , /the glades/i
     , /meridia/i
     , /lorazepam/i
-    , /My Homepage/
-    , /Homepage/
-    , /Wellensteyn/
-    , /Hermes/
-    , /vuitton/
-    , /insurance/
-    , /moncler/
-    , /suresh/
-    , /coupon/
+    , /My Homepage/i
+    , /Homepage/i
+    , /Wellensteyn/i
+    , /Hermes/i
+    , /vuitton/i
+    , /insurance/i
+    , /moncler/i
+    , /suresh/i
+    , /coupon/i
     , /^(URL)$/ ];
   sites = [ /idealglasses\.net/
     , /gruppomelearn\.net/
