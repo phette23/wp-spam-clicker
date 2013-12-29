@@ -68,7 +68,9 @@ void(
     , /moncler/i
     , /suresh/i
     , /coupon/i
-    , /^(URL)$/ ];
+    , /^(URL)$/
+    , /fiverr/i
+    , /buy gig/i ];
   sites = [ /idealglasses\.net/
     , /gruppomelearn\.net/
     , /youtube\.com\/watch\?v/
@@ -87,7 +89,8 @@ void(
     , /mariopireddu\.net/
     , /hopegfx\.com/
     , /proxykat\.net/
-    , /billsmithinc\.com/ ];
+    , /billsmithinc\.com/
+    , /goo\.gl/ ];
   // emails = [ ];
   // ips = [ ];
 
