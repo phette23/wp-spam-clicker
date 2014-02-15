@@ -70,9 +70,12 @@ void(
     , /moncler/i
     , /suresh/i
     , /coupon/i
-    , /^(URL)$/
+    , /URL/
     , /fiverr/i
-    , /buy gig/i ];
+    , /buy gig/i
+    // a lot of spam comments use a URL for name
+    , /^( https?:)/i
+    , /cheapest/i ];
   sites = [ /idealglasses\.net/
     , /gruppomelearn\.net/
     , /youtube\.com\/watch\?v/
