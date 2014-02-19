@@ -95,7 +95,8 @@ void(
     , /hopegfx\.com/
     , /proxykat\.net/
     , /billsmithinc\.com/
-    , /goo\.gl/ ];
+    , /goo\.gl/
+    , /globalpublicationsandsoftware.com/ ];
   // emails = [ ];
   // ips = [ ];
 
