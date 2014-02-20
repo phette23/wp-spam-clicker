@@ -75,7 +75,8 @@ void(
     , /buy gig/i
     // a lot of spam comments use a URL for name
     , /^( https?:)/i
-    , /cheapest/i ];
+    , /cheapest/i
+    , /^ Marketing$/ ];
   sites = [ /idealglasses\.net/
     , /gruppomelearn\.net/
     , /youtube\.com\/watch\?v/
