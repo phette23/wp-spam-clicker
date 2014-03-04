@@ -76,7 +76,9 @@ void(
     // a lot of spam comments use a URL for name
     , /^( https?:)/i
     , /cheapest/i
-    , /^ Marketing$/ ];
+    , /^ Marketing$/
+    , /test site/i
+    , /site test/i ];
   sites = [ /idealglasses\.net/
     , /gruppomelearn\.net/
     , /youtube\.com\/watch\?v/
@@ -97,7 +99,8 @@ void(
     , /proxykat\.net/
     , /billsmithinc\.com/
     , /goo\.gl/
-    , /globalpublicationsandsoftware.com/ ];
+    , /globalpublicationsandsoftware\.com/
+    , /mytestsite\.com/ ];
   // emails = [ ];
   // ips = [ ];
 
