@@ -78,7 +78,9 @@ void(
     , /cheapest/i
     , /^ Marketing$/
     , /test site/i
-    , /site test/i ];
+    , /site test/i
+    , /mercurial vapor/i
+    , / jerseys /i ];
   sites = [ /idealglasses\.net/
     , /gruppomelearn\.net/
     , /youtube\.com\/watch\?v/
@@ -100,7 +102,8 @@ void(
     , /billsmithinc\.com/
     , /goo\.gl/
     , /globalpublicationsandsoftware\.com/
-    , /mytestsite\.com/ ];
+    , /mytestsite\.com/
+    , /indes\.fr/ ];
   // emails = [ ];
   // ips = [ ];
 
