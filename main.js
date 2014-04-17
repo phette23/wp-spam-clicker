@@ -80,7 +80,8 @@ void(
     , /test site/i
     , /site test/i
     , /mercurial vapor/i
-    , / jerseys /i ];
+    , / jerseys /i
+    , /burberry/i ];
   sites = [ /idealglasses\.net/
     , /gruppomelearn\.net/
     , /youtube\.com\/watch\?v/
