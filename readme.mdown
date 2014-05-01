@@ -8,7 +8,7 @@ The bookmarklet checks each comment against a blacklist array of regular express
 
 If you want to get as many comments as possible, on the Edit Comments page click *Screen Options* and then set the number of comments displayed to a large number. Note that this may cause problems with Bulk Actions; on a blog that I contribute to, I get a firewall error when I try to edit too many comments at once, so I generally keep the number down to 20 at a time.
 
-How did I compile the blacklist? By looking at a bunch of spam comments. It's not comprehensive and I'd review the selections the bookmarklet makes to ensure you're not throwing away legit comments. Right now, there are actually no blacklisted emails or IP addresses. Checking names for stuff like clothing and drug brands was by far the most fruitful approach.
+How did I compile the blacklist? By looking at a bunch of spam comments. It's not comprehensive and I'd review the selections the bookmarklet makes to ensure you're not throwing away legit comments. Right now, there are actually no blacklisted emails and only one IP address. Checking names for stuff like clothing and drug brands was by far the most fruitful approach.
 
 It'll only work in modern browsers because it uses stuff like `forEach` & I didn't bother relying on jQuery.
 

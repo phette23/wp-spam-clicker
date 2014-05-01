@@ -81,7 +81,9 @@ void(
     , /site test/i
     , /mercurial vapor/i
     , / jerseys /i
-    , /burberry/i ];
+    , /burberry/i
+    , /new balance/i
+    , /air max/i ];
   sites = [ /idealglasses\.net/
     , /gruppomelearn\.net/
     , /youtube\.com\/watch\?v/
@@ -106,7 +108,9 @@ void(
     , /mytestsite\.com/
     , /indes\.fr/ ];
   // emails = [ ];
-  // ips = [ ];
+  ips = [
+    /58\.23\.27\.62/
+    ];
 
   // extend NodeList with Array's forEach method
   NodeList.prototype.forEach = Array.prototype.forEach;
