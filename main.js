@@ -83,7 +83,8 @@ void(
     , / jerseys /i
     , /burberry/i
     , /new balance/i
-    , /air max/i ];
+    , /air max/i
+    , /michael kors/i ];
   sites = [ /idealglasses\.net/
     , /gruppomelearn\.net/
     , /youtube\.com\/watch\?v/
