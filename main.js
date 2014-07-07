@@ -84,7 +84,10 @@ void(
     , /burberry/i
     , /new balance/i
     , /air max/i
-    , /michael kors/i ];
+    , /michael kors/i
+    , /louboutin/i
+    , /beats by dre/i
+    , /replica watch/i ];
   sites = [ /idealglasses\.net/
     , /gruppomelearn\.net/
     , /youtube\.com\/watch\?v/
