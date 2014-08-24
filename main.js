@@ -73,8 +73,7 @@ void(
     , /URL/
     , /fiverr/i
     , /buy gig/i
-    // a lot of spam comments use a URL for name
-    , /^( https?:)/i
+    , /^( https?:)/i // a lot of spam comments use a URL for name
     , /cheapest/i
     , /^ Marketing$/
     , /test site/i
@@ -87,7 +86,10 @@ void(
     , /michael kors/i
     , /louboutin/i
     , /beats by dre/i
-    , /replica watch/i ];
+    , /replica watch/i
+    , /^maillot /i
+    , /^ferragamo /i
+    , /^chanel /i ];
   sites = [ /idealglasses\.net/
     , /gruppomelearn\.net/
     , /youtube\.com\/watch\?v/
