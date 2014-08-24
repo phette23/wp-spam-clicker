@@ -33,6 +33,7 @@ void(
     , /^( https?:)/ // a lot of spam comments use a URL for name
     , /URL/
     , re(' jerseys')
+    , re('abercrombie')
     , re('adderall')
     , re('air max')
     , re('ambien')
@@ -50,10 +51,11 @@ void(
     , re('erectile')
     , re('ferragamo')
     , re('fiverr')
+    , re('gamma blue')
     , re('hermes')
     , re('homepage')
     , re('insurance')
-    , re('jordan')
+    , re('jordans?')
     , re('klonopin')
     , re('lasik')
     , re('levitra')
@@ -78,7 +80,7 @@ void(
     , re('outlet')
     , re('percocet')
     , re('phentermine')
-    , re('ray ban')
+    , re('ray bans?')
     , re('real estate')
     , re('replica watch')
     , re('samsung')
@@ -97,6 +99,7 @@ void(
     , re('xanax')
     ];
   sites = [ /abcads\.net/
+    , /beefruit\.net/
     , /billsmithinc\.com/
     , /clubtickets\.ws/
     , /digital\-import\.co\.uk/
