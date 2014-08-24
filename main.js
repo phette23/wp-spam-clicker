@@ -13,6 +13,9 @@ void(
     actedUpon = 0;
 
   // shortcuts
+  function re ( str ) {
+    return new RegExp('\\b' + str + '\\b', 'i')
+  }
   function qa ( sel ) {
     return d.querySelectorAll( sel );
   }
@@ -26,93 +29,97 @@ void(
   }
 
   // arrays of regexs which comments are tested against
-  names = [ /real estate/i
-    , /oakley/i
-    , /sunglasses/i
-    , /massage/i
-    , /mulberry /i
-    , /nike/i
-    , /nuclear power/i
-    , /mortgage/i
-    , /calvin klein/i
-    , /ugg/i
-    , /viagra/i
-    , /phentermine/i
-    , /outlet/i
-    , /cash advance/i
-    , /samsung/i
-    , /ray ban/i
-    , /loans/i
-    , /business/i
-    , /erectile/i
-    , /lasik/i
-    , /valium/i
-    , /klonopin/i
-    , /mitsubishi/i
-    , /vicodin/i
-    , /adderall/i
-    , /percocet/i
-    , /cialis/i
-    , /xanax/i
-    , /ambien/i
-    , /levitra/i
-    , /longchamp/i
-    , /vanessa bruno/i
-    , /the glades/i
-    , /meridia/i
-    , /lorazepam/i
-    , /My Homepage/i
-    , /Homepage/i
-    , /Wellensteyn/i
-    , /Hermes/i
-    , /vuitton/i
-    , /insurance/i
-    , /moncler/i
-    , /suresh/i
-    , /coupon/i
+  names = [ /^ Marketing$/
+    , /^( https?:)/ // a lot of spam comments use a URL for name
     , /URL/
-    , /fiverr/i
-    , /buy gig/i
-    , /^( https?:)/i // a lot of spam comments use a URL for name
-    , /cheapest/i
-    , /^ Marketing$/
-    , /test site/i
-    , /site test/i
-    , /mercurial vapor/i
-    , / jerseys /i
-    , /burberry/i
-    , /new balance/i
-    , /air max/i
-    , /michael kors/i
-    , /louboutin/i
-    , /beats by dre/i
-    , /replica watch/i
-    , /^maillot /i
-    , /^ferragamo /i
-    , /^chanel /i ];
-  sites = [ /idealglasses\.net/
-    , /gruppomelearn\.net/
-    , /youtube\.com\/watch\?v/
-    , /hollycalvinklein\.com/
-    , /digital\-import\.co\.uk/
-    , /small\-business\-online\.co\.uk/
-    , /ieeesfsu\.org\.pl/
-    , /iphone2madness\.com/
-    , /paada\.co\.uk/
-    , /abcads\.net/
-    , /clubtickets\.ws/
-    , /eziconex\.com/
-    , /vbro\.co\.uk/
-    , /islamick12\.com/
-    , /removedrmfast\.com/
-    , /mariopireddu\.net/
-    , /hopegfx\.com/
-    , /proxykat\.net/
+    , re(' jerseys')
+    , re('adderall')
+    , re('air max')
+    , re('ambien')
+    , re('beats by dre')
+    , re('burberry')
+    , re('business')
+    , re('buy gig')
+    , re('calvin klein')
+    , re('cash advance')
+    , re('chanel')
+    , re('cheapest')
+    , re('cialis')
+    , re('coupon')
+    , re('dior bag')
+    , re('erectile')
+    , re('ferragamo')
+    , re('fiverr')
+    , re('hermes')
+    , re('homepage')
+    , re('insurance')
+    , re('jordan')
+    , re('klonopin')
+    , re('lasik')
+    , re('levitra')
+    , re('loans')
+    , re('longchamp')
+    , re('lorazepam')
+    , re('louboutin')
+    , re('maillot')
+    , re('massage')
+    , re('mercurial vapor')
+    , re('meridia')
+    , re('michael kors')
+    , re('mitsubishi')
+    , re('moncler')
+    , re('mortgage')
+    , re('mulberry')
+    , re('my homepage')
+    , re('new balance')
+    , re('nike')
+    , re('nuclear power')
+    , re('oakley')
+    , re('outlet')
+    , re('percocet')
+    , re('phentermine')
+    , re('ray ban')
+    , re('real estate')
+    , re('replica watch')
+    , re('samsung')
+    , re('site test')
+    , re('sunglasses')
+    , re('suresh')
+    , re('test site')
+    , re('the glades')
+    , re('ugg')
+    , re('valium')
+    , re('vanessa bruno')
+    , re('viagra')
+    , re('vicodin')
+    , re('vuitton')
+    , re('Wellensteyn')
+    , re('xanax')
+    ];
+  sites = [ /abcads\.net/
     , /billsmithinc\.com/
-    , /goo\.gl/
+    , /clubtickets\.ws/
+    , /digital\-import\.co\.uk/
+    , /eziconex\.com/
     , /globalpublicationsandsoftware\.com/
+    , /goo\.gl/
+    , /gruppomelearn\.net/
+    , /hollycalvinklein\.com/
+    , /hopegfx\.com/
+    , /ieeesfsu\.org\.pl/
+    , /indes\.fr/
+    , /iphone2madness\.com/
+    , /islamick12\.com/
+    , /mariopireddu\.net/
     , /mytestsite\.com/
-    , /indes\.fr/ ];
+    , /paada\.co\.uk/
+    , /proxykat\.net/
+    , /removedrmfast\.com/
+    , /small\-business\-online\.co\.uk/
+    , /vbro\.co\.uk/
+    , /youtube\.com\/watch\?v/
+    , /idealglasses\.net/
+    ];
   // emails = [ ];
   ips = [
     /58\.23\.27\.62/
