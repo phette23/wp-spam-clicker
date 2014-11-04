@@ -14,7 +14,7 @@ void(
 
   // shortcuts
   function re ( str ) {
-    return new RegExp('\\b' + str + '\\b', 'i')
+    return new RegExp('\\b' + str + '\\b', 'i');
   }
   function qa ( sel ) {
     return d.querySelectorAll( sel );
@@ -42,6 +42,7 @@ void(
     , re('business')
     , re('buy gig')
     , re('calvin klein')
+    , re('canada goose')
     , re('cash advance')
     , re('chanel')
     , re('cheapest')
